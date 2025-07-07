@@ -1,6 +1,19 @@
-name = "Abhishek"
-age = 36
-print(f" I am {name}, and I am {age} years old")
+high_income = True
+good_credit = True
+student = False
 
-address = input("Which city do you live? ")
-print (address)
+if high_income and good_credit and not student:
+    print("Eligible")
+else:
+    print("Not Eligible")
+
+
+for number in range(3):
+    print("Attempt", number+1)
+
+
+for number in range(1, 4):
+    print("Attempt", number)
+
+for number in range(1, 4, 2):
+    print("Attempt", number)
