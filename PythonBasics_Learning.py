@@ -1,3 +1,4 @@
+from pprint import pprint
 high_income = True
 good_credit = True
 student = False
@@ -88,3 +89,26 @@ print(fizz_buzz(15))
 point = (1, 2, 3)
 print(point)
 print(point[0:2])
+
+
+values = []
+for x in range(5):
+    values.append(x*2)
+print(values)
+
+
+sentence = "This is a common interview question"
+
+char_freq = {}
+for char in sentence:
+    if char in char_freq:
+        char_freq[char] += 1
+    else:
+        char_freq[char] = 1
+
+char_freq_sorted = sorted(
+    char_freq.items(),
+    key=lambda value: value[1],
+    reverse=True)
+
+print(char_freq_sorted[0])
