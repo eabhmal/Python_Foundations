@@ -63,3 +63,24 @@ def multiply_n(*numbers):
 
 
 print(multiply_n(2, 3, 4, 5))
+
+
+def save_user(**user):
+    print(user)
+
+
+save_user(id=1, name="John", age=22)
+
+
+def fizz_buzz(input):
+    if (input % 3) == 0 and (input % 5 == 0):
+        return "fizzbuzz"
+    elif input % 3 == 0:
+        return "fizz"
+    elif input % 5 == 0:
+        return "buzz"
+    else:
+        return input
+
+
+print(fizz_buzz(15))
