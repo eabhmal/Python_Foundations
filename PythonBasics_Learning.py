@@ -84,3 +84,7 @@ def fizz_buzz(input):
 
 
 print(fizz_buzz(15))
+
+point = (1, 2, 3)
+print(point)
+print(point[0:2])
