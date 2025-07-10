@@ -1,3 +1,4 @@
+import sys
 from pprint import pprint
 high_income = True
 good_credit = True
@@ -112,3 +113,6 @@ char_freq_sorted = sorted(
     reverse=True)
 
 print(char_freq_sorted[0])
+
+
+print(sys.path)
